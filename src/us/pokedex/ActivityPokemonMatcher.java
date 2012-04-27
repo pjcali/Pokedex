@@ -1,15 +1,33 @@
-//Pokemon Database Query Strings and testing.
+package us.pokedex;
+
+import android.app.Activity;
+import android.os.Bundle;
+import java.sql.*;
+
+
+//Unused Sean code:
+//public class ActivityPokemonMatcher extends Activity {
+    /** Called when the activity is first created. */
+//    @Override
+//    public void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_pokemon_matcher);
+//    }
+    
+//    private
+//}
+
+
+/**
+ * @title: ActivityPokemonMatcher.java
+ * @description: Pokemon Database Query Strings and testing.
+ * @author Tyler Wood
+ * @date April 26, 9:02pm PDT
+ */
 
 //1. Get a Pokemon by its ID number. Eg. 001 -> Bulbasaur.
 //Prototype: Using the primary key of the database, the Pokedex_ID, this statement returns a Bulbasaur entry:
 //SELECT * FROM Pokedex12.Pokedex WHERE Pokedex_ID = 1;
-
-import java.sql.*;
-
-/**
- * @author Tyler Wood
- * @date April 26, 9:02pm PDT
- */
 
 //Class for retrieving a pokemon by it's ID number from the database.
 public class GetPokemonByID {
