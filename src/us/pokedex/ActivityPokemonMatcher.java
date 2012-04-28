@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package us.pokedex;
 
 import android.app.Activity;
@@ -13,7 +13,6 @@ public class ActivityPokemonMatcher extends Activity {
     }
     
     private 
-=======
 package us.pokedex;
 
 import android.app.Activity;
@@ -182,5 +181,4 @@ public class GetPokemonByName {
             instance = new GetPokemonByName();
         return instance;
     }  
->>>>>>> quwert95/master
 }
