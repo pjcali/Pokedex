@@ -11,5 +11,9 @@ public class ActivityPokemonMatcher extends Activity {
         setContentView(R.layout.activity_pokemon_matcher);
     }
     
-    private 
+    private Pokemon findMatch( int shape, int color, int hobby )
+    {
+    	
+    	return null;
+    }
 }
