@@ -2,6 +2,7 @@ package us.pokedex;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 
 public class ActivityShowSearchResults extends Activity {
     /** Called when the activity is first created. */
@@ -10,4 +11,8 @@ public class ActivityShowSearchResults extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_pokemon);
     }
+    
+    public void onClose(View v) {
+		finish();
+	}
 }

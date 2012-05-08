@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:onClick="onClick"
+            android:onClick="onClose"
             android:text="@string/back" />
 
     </RelativeLayout>
