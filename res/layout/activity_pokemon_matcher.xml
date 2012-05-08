@@ -1,12 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical" >
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:text="              Choose your favorite hobby" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="139dp" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="81dp"
+            android:src="@drawable/icon_comedy" />
+
+        <ImageButton
+            android:id="@+id/ImageButton04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/icon_art" />
+
+        <ImageButton
+            android:id="@+id/ImageButton05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageButton04"
+            android:layout_below="@+id/imageButton1"
+            android:src="@drawable/icon_outdoors" />
+
+        <ImageButton
+            android:id="@+id/ImageButton06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButton1"
+            android:layout_below="@+id/imageButton1"
+            android:src="@drawable/icon_sports" />
+
+        <ImageButton
+            android:id="@+id/ImageButton07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_swimming" />
+
+        <ImageButton
+            android:id="@+id/ImageButton03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ImageButton06"
+            android:layout_alignLeft="@+id/ImageButton07"
+            android:src="@drawable/icon_esp" />
+
+        <ImageButton
+            android:id="@+id/ImageButton02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ImageButton07"
+            android:layout_toRightOf="@+id/ImageButton07"
+            android:src="@drawable/icon_heart" />
+
+        <ImageButton
+            android:id="@+id/ImageButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageButton02"
+            android:layout_below="@+id/ImageButton02"
+            android:src="@drawable/icon_videogame" />
+
+    </RelativeLayout>
 
 </LinearLayout>
