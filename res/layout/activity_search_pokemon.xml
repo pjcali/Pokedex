@@ -24,7 +24,7 @@
             android:layout_alignBaseline="@+id/editText1"
             android:layout_alignBottom="@+id/editText1"
             android:layout_alignParentRight="true"
-            android:text="Search" />
+            android:text="@string/search" />
 
         <FrameLayout
             android:id="@+id/imgFrame"
@@ -52,12 +52,12 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginRight="32dp"
-            android:text="Button" />
+            android:text="@string/play" />
 
         <ProgressBar
             android:id="@+id/progressBar1"
@@ -65,6 +65,14 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/button1"
             android:layout_alignParentBottom="true" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back"/>
         
     </RelativeLayout>
 

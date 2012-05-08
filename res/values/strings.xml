@@ -3,5 +3,8 @@
 
     <string name="hello">Hello World, ActivityPokedexMainMenu!</string>
     <string name="app_name">Android-Pokedex</string>
+    <string name="back">Back</string>
+    <string name="search">Search</string>
+    <string name="play">Play</string>
 
 </resources>
