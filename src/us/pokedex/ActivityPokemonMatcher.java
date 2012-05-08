@@ -35,10 +35,10 @@ import java.sql.*;
 public class ActivityPokemonMatcher extends Activity {
     /** Called when the activity is first created. */
 //    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_pokemon_matcher);
-//    }
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_pokemon_matcher);
+    }
     
 //    private
 //}
