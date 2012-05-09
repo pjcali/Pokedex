@@ -24,6 +24,19 @@
             android:name=".ActivityPokemonMatcher"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" />
+
+         <!-- Search Pokemon Activity -->
+        <activity
+            android:name=".ActivitySearchPokemon"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        
+         <!-- Pokemon Random Activity -->
+        <activity
+            android:name=".ActivityPokemonRandom"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        
     </application>
 
 </manifest>

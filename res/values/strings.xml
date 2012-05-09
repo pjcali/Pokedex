@@ -6,5 +6,9 @@
     <string name="back">Back</string>
     <string name="search">Search</string>
     <string name="play">Play Statistics</string>
+    <string name="pkmnmatch">What kind of Pokemon are you?</string>
+    <string name="pkmnsearch">Search for a Pokemon</string>
+    <string name="pkmnrand">Show me a random Pokemon</string>
+    <string name="pkmnoptions">Options</string>
 
 </resources>
