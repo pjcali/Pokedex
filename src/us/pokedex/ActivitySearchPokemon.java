@@ -1,16 +1,7 @@
 package us.pokedex;
 
 import android.app.Activity;
-<<<<<<< HEAD
 import android.os.Bundle;
-
-public class ActivitySearchPokemon extends Activity {
-	public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search_pokemon);
-    }
-}
-=======
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -52,4 +43,4 @@ public class ActivitySearchPokemon extends Activity {
     	}
     }
 }
->>>>>>> f16c23ef00c29684f220e76313a524f5a806822a
+
