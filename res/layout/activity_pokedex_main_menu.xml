@@ -32,7 +32,8 @@
             android:layout_below="@+id/button1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
-            android:text="POKEMON LOOKUP" />
+            android:text="POKEMON SEARCH"
+            android:onClick="startPokemonSearch" />
 
         <Button
             android:id="@+id/button3"
@@ -41,7 +42,8 @@
             android:layout_alignLeft="@+id/button2"
             android:layout_below="@+id/button2"
             android:layout_marginTop="40dp"
-            android:text="RANDOM POKEMON" />
+            android:text="RANDOM POKEMON" 
+            android:onClick="startPokemonRandom" />
 
         <Button
             android:id="@+id/button4"

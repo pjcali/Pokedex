@@ -18,17 +18,17 @@ public class ActivityPokedexMainMenu extends Activity {
     	finish();
     }
     
-    void startPokemonLookup(View v){
-    	startActivity(new Intent(this, ActivityPokemonMatcher.class));
+    public void startPokemonSearch(View v){
+    	startActivity(new Intent(this, ActivitySearchPokemon.class));
     	finish();
     }
     
-    void startPokemonRandom(View v){
-    	startActivity(new Intent(this, ActivityPokemonMatcher.class));
+    public void startPokemonRandom(View v){
+    	startActivity(new Intent(this, ActivityPokemonRandom.class));
     	finish();
     }
     
-    void startOptions(View v){
+    public void startOptions(View v){
     	startActivity(new Intent(this, ActivityPokemonMatcher.class));
     	finish();
     }

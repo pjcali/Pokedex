@@ -25,7 +25,11 @@ public class ActivityPokemonMatcher extends Activity {
 */
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+
 import java.sql.*;
 //package us.pokedex;
 
@@ -33,16 +37,208 @@ import java.sql.*;
 
 //Unused Sean code:
 public class ActivityPokemonMatcher extends Activity {
+	ImageButton hobby_button_0;
+	ImageButton hobby_button_1;
+	ImageButton hobby_button_2;
+	ImageButton hobby_button_3;
+	ImageButton hobby_button_4;
+	ImageButton hobby_button_5;
+	ImageButton hobby_button_6;
+	ImageButton hobby_button_7;
+	int hobby_choice = -1;
     /** Called when the activity is first created. */
 //    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pokemon_matcher);
+        hobby_button_0 = (ImageButton) findViewById(R.id.ImageButton08);
+        hobby_button_1 = (ImageButton) findViewById(R.id.ImageButton09);
+        hobby_button_2 = (ImageButton) findViewById(R.id.ImageButton10);
+        hobby_button_3 = (ImageButton) findViewById(R.id.ImageButton11);
+        hobby_button_4 = (ImageButton) findViewById(R.id.ImageButton12);
+        hobby_button_5 = (ImageButton) findViewById(R.id.ImageButton13);
+        hobby_button_6 = (ImageButton) findViewById(R.id.ImageButton14);
+        hobby_button_7 = (ImageButton) findViewById(R.id.imageButton2);
     }
     
 //    private
 //}
 
+    public void hobby0(View v){
+    	//this is where the play button comes into play.
+        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
+                //playButton.setText("Pause Playback");
+                hobby_button_0.setBackgroundColor(Color.GREEN);
+                //hobby_choice = 0;
+        }
+        else {
+            //playButton.setText("Play Statistics"); 
+            hobby_button_0.setBackgroundColor(Color.RED);
+            hobby_choice = 0;
+        }*/
+    	hobby_button_0.setBackgroundColor(Color.GREEN);
+        hobby_button_1.setBackgroundColor(Color.WHITE);
+        hobby_button_2.setBackgroundColor(Color.WHITE);
+        hobby_button_3.setBackgroundColor(Color.WHITE);
+        hobby_button_4.setBackgroundColor(Color.WHITE);
+        hobby_button_5.setBackgroundColor(Color.WHITE);
+        hobby_button_6.setBackgroundColor(Color.WHITE);
+        hobby_button_7.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void hobby1(View v){
+    	//this is where the play button comes into play.
+        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
+                //playButton.setText("Pause Playback");
+                hobby_button_0.setBackgroundColor(Color.GREEN);
+                //hobby_choice = 0;
+        }
+        else {
+            //playButton.setText("Play Statistics"); 
+            hobby_button_0.setBackgroundColor(Color.RED);
+            hobby_choice = 0;
+        }*/
+    	hobby_button_1.setBackgroundColor(Color.GREEN);
+        hobby_button_0.setBackgroundColor(Color.WHITE);
+        hobby_button_2.setBackgroundColor(Color.WHITE);
+        hobby_button_3.setBackgroundColor(Color.WHITE);
+        hobby_button_4.setBackgroundColor(Color.WHITE);
+        hobby_button_5.setBackgroundColor(Color.WHITE);
+        hobby_button_6.setBackgroundColor(Color.WHITE);
+        hobby_button_7.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void hobby2(View v){
+    	//this is where the play button comes into play.
+        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
+                //playButton.setText("Pause Playback");
+                hobby_button_0.setBackgroundColor(Color.GREEN);
+                //hobby_choice = 0;
+        }
+        else {
+            //playButton.setText("Play Statistics"); 
+            hobby_button_0.setBackgroundColor(Color.RED);
+            hobby_choice = 0;
+        }*/
+    	hobby_button_2.setBackgroundColor(Color.GREEN);
+        hobby_button_1.setBackgroundColor(Color.WHITE);
+        hobby_button_0.setBackgroundColor(Color.WHITE);
+        hobby_button_3.setBackgroundColor(Color.WHITE);
+        hobby_button_4.setBackgroundColor(Color.WHITE);
+        hobby_button_5.setBackgroundColor(Color.WHITE);
+        hobby_button_6.setBackgroundColor(Color.WHITE);
+        hobby_button_7.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void hobby3(View v){
+    	//this is where the play button comes into play.
+        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
+                //playButton.setText("Pause Playback");
+                hobby_button_0.setBackgroundColor(Color.GREEN);
+                //hobby_choice = 0;
+        }
+        else {
+            //playButton.setText("Play Statistics"); 
+            hobby_button_0.setBackgroundColor(Color.RED);
+            hobby_choice = 0;
+        }*/
+    	hobby_button_3.setBackgroundColor(Color.GREEN);
+        hobby_button_1.setBackgroundColor(Color.WHITE);
+        hobby_button_2.setBackgroundColor(Color.WHITE);
+        hobby_button_0.setBackgroundColor(Color.WHITE);
+        hobby_button_4.setBackgroundColor(Color.WHITE);
+        hobby_button_5.setBackgroundColor(Color.WHITE);
+        hobby_button_6.setBackgroundColor(Color.WHITE);
+        hobby_button_7.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void hobby4(View v){
+    	//this is where the play button comes into play.
+        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
+                //playButton.setText("Pause Playback");
+                hobby_button_0.setBackgroundColor(Color.GREEN);
+                //hobby_choice = 0;
+        }
+        else {
+            //playButton.setText("Play Statistics"); 
+            hobby_button_0.setBackgroundColor(Color.RED);
+            hobby_choice = 0;
+        }*/
+    	hobby_button_4.setBackgroundColor(Color.GREEN);
+        hobby_button_1.setBackgroundColor(Color.WHITE);
+        hobby_button_2.setBackgroundColor(Color.WHITE);
+        hobby_button_3.setBackgroundColor(Color.WHITE);
+        hobby_button_0.setBackgroundColor(Color.WHITE);
+        hobby_button_5.setBackgroundColor(Color.WHITE);
+        hobby_button_6.setBackgroundColor(Color.WHITE);
+        hobby_button_7.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void hobby5(View v){
+    	//this is where the play button comes into play.
+        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
+                //playButton.setText("Pause Playback");
+                hobby_button_0.setBackgroundColor(Color.GREEN);
+                //hobby_choice = 0;
+        }
+        else {
+            //playButton.setText("Play Statistics"); 
+            hobby_button_0.setBackgroundColor(Color.RED);
+            hobby_choice = 0;
+        }*/
+    	hobby_button_5.setBackgroundColor(Color.GREEN);
+        hobby_button_1.setBackgroundColor(Color.WHITE);
+        hobby_button_2.setBackgroundColor(Color.WHITE);
+        hobby_button_3.setBackgroundColor(Color.WHITE);
+        hobby_button_4.setBackgroundColor(Color.WHITE);
+        hobby_button_0.setBackgroundColor(Color.WHITE);
+        hobby_button_6.setBackgroundColor(Color.WHITE);
+        hobby_button_7.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void hobby6(View v){
+    	//this is where the play button comes into play.
+        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
+                //playButton.setText("Pause Playback");
+                hobby_button_0.setBackgroundColor(Color.GREEN);
+                //hobby_choice = 0;
+        }
+        else {
+            //playButton.setText("Play Statistics"); 
+            hobby_button_0.setBackgroundColor(Color.RED);
+            hobby_choice = 0;
+        }*/
+    	hobby_button_7.setBackgroundColor(Color.GREEN);
+        hobby_button_1.setBackgroundColor(Color.WHITE);
+        hobby_button_2.setBackgroundColor(Color.WHITE);
+        hobby_button_3.setBackgroundColor(Color.WHITE);
+        hobby_button_4.setBackgroundColor(Color.WHITE);
+        hobby_button_5.setBackgroundColor(Color.WHITE);
+        hobby_button_0.setBackgroundColor(Color.WHITE);
+        hobby_button_7.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void hobby7(View v){
+    	//this is where the play button comes into play.
+        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
+                //playButton.setText("Pause Playback");
+                hobby_button_0.setBackgroundColor(Color.GREEN);
+                //hobby_choice = 0;
+        }
+        else {
+            //playButton.setText("Play Statistics"); 
+            hobby_button_0.setBackgroundColor(Color.RED);
+            hobby_choice = 0;
+        }*/
+    	hobby_button_7.setBackgroundColor(Color.GREEN);
+        hobby_button_1.setBackgroundColor(Color.WHITE);
+        hobby_button_2.setBackgroundColor(Color.WHITE);
+        hobby_button_3.setBackgroundColor(Color.WHITE);
+        hobby_button_4.setBackgroundColor(Color.WHITE);
+        hobby_button_5.setBackgroundColor(Color.WHITE);
+        hobby_button_6.setBackgroundColor(Color.WHITE);
+        hobby_button_0.setBackgroundColor(Color.WHITE);
+    }
 
 /**
  * @title: ActivityPokemonMatcher.java
