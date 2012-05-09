@@ -16,14 +16,17 @@ public class ActivityPokedexMainMenu extends Activity {
         setContentView(R.layout.activity_pokedex_main_menu);
     }
     
-    public void startPokemonMatcher(View v){
+    public void startPokemonMatcher(View v) throws NullPointerException {
+    	Throwable tr = new Throwable();
     	Log.i("PIADEBUG", "JUST GOT INSIDE THE START function.");
+    	Log.getStackTraceString(tr);
     	startActivity(new Intent(c, ActivityPokemonMatcher.class));
+    	Log.i("PIADEBUG", "JUST GOT PAST THE CALL.");
     	//finish();
     }
     
     public void startSearchPokemon(View v){
-    	Log.i("PIADEBUG", "JUST GOT INSIDE THE START function.");
+    	Log.i("PIADEBUG", ActivitySearchPokemon.class.toString());
     	startActivity(new Intent(c, ActivitySearchPokemon.class));
     	//finish();
     }

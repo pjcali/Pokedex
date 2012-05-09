@@ -38,7 +38,6 @@ public final class R {
         public static final int imageView1=0x7f050010;
         public static final int imgFrame=0x7f05000f;
         public static final int listView1=0x7f050011;
-        public static final int progressBar1=0x7f050012;
         public static final int relativeLayout1=0x7f050005;
         public static final int relativeLayout2=0x7f050000;
     }
