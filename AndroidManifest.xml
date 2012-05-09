@@ -24,18 +24,33 @@
             android:name=".ActivityPokemonMatcher"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" />
+<<<<<<< HEAD
         <activity
             android:name=".ActivitySearchPokemon"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" />
+=======
+        
+         <!-- Pokemon Random Activity -->
+>>>>>>> f16c23ef00c29684f220e76313a524f5a806822a
         <activity
             android:name=".ActivityPokemonRandom"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" />
+<<<<<<< HEAD
         <activity
             android:name=".DialogOptions"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" />
+=======
+        
+         <!-- Search Pokemon Activity -->
+        <activity 
+            android:name=".ActivitySearchPokemon" 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait"/>
+  
+>>>>>>> f16c23ef00c29684f220e76313a524f5a806822a
     </application>
 
 </manifest>

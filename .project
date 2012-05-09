@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< Updated upstream
 	<name>ActivityPokedexMainMenu</name>
+=======
+	<name>AndroidPokedex</name>
+>>>>>>> Stashed changes
 	<comment></comment>
 	<projects>
 	</projects>
