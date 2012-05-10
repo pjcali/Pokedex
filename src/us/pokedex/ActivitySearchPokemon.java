@@ -3,7 +3,6 @@ package us.pokedex;
 import android.app.Activity;
 import android.os.Bundle;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +17,6 @@ public class ActivitySearchPokemon extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_pokemon);
         playButton = (Button) findViewById(R.id.button2);
-        if (playButton == null) Log.i("PIADEBUG","THE BUTTON IS NULL");
     }
     
     public void onClose(View v) {
@@ -32,6 +30,8 @@ public class ActivitySearchPokemon extends Activity {
     public void onPlay(View v){
     	//this is where the play button comes into play.
     	if ( playStatus ){	//if the text to speech is not playing then play and update button.
+    		StatisticsTTS m = new StatisticsTTS(this);
+    		m.onInit(1);
     		playButton.setText("Pause Playback");
     		playButton.setBackgroundColor(Color.GREEN);
     		playStatus=false;

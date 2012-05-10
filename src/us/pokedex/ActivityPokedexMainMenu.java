@@ -18,27 +18,20 @@ public class ActivityPokedexMainMenu extends Activity {
     
     public void startPokemonMatcher(View v) throws NullPointerException {
     	Throwable tr = new Throwable();
-    	Log.i("PIADEBUG", "JUST GOT INSIDE THE START function.");
     	Log.getStackTraceString(tr);
     	startActivity(new Intent(c, ActivityPokemonMatcher.class));
-    	Log.i("PIADEBUG", "JUST GOT PAST THE CALL.");
-    	//finish();
     }
     
 
     public void startPokemonSearch(View v){
     	startActivity(new Intent(this, ActivitySearchPokemon.class));
-    	finish();
     }
     
     public void startPokemonRandom(View v){
     	startActivity(new Intent(this, ActivityPokemonRandom.class));
-    	finish();
     }
     
     public void startOptions(View v){
     	startActivity(new Intent(this, ActivityPokemonMatcher.class));
-    	finish();
-
     }
 }
