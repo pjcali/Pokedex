@@ -25,10 +25,12 @@ public class ActivityPokemonMatcher extends Activity {
 */
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import java.sql.*;
 //package us.pokedex;
@@ -45,7 +47,27 @@ public class ActivityPokemonMatcher extends Activity {
 	ImageButton hobby_button_5;
 	ImageButton hobby_button_6;
 	ImageButton hobby_button_7;
+	
+	ImageButton color_button_0;
+	ImageButton color_button_1;
+	ImageButton color_button_2;
+	ImageButton color_button_3;
+	ImageButton color_button_4;
+	ImageButton color_button_5;
+	ImageButton color_button_6;
+	ImageButton color_button_7;
+	ImageButton color_button_8;
+	ImageButton color_button_9;
+	
+	ImageButton shape_button_0;
+	ImageButton shape_button_1;
+	ImageButton shape_button_2;
+	ImageButton shape_button_3;
+	
 	int hobby_choice = -1;
+	int color_choice = -1;
+	int shape_choice = -1;
+	
     /** Called when the activity is first created. */
 //    @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,23 +81,54 @@ public class ActivityPokemonMatcher extends Activity {
         hobby_button_5 = (ImageButton) findViewById(R.id.ImageButton13);
         hobby_button_6 = (ImageButton) findViewById(R.id.ImageButton14);
         hobby_button_7 = (ImageButton) findViewById(R.id.imageButton2);
+        
+        hobby_button_0.setBackgroundColor(Color.WHITE);
+        hobby_button_1.setBackgroundColor(Color.WHITE);
+        hobby_button_2.setBackgroundColor(Color.WHITE);
+        hobby_button_3.setBackgroundColor(Color.WHITE);
+        hobby_button_4.setBackgroundColor(Color.WHITE);
+        hobby_button_5.setBackgroundColor(Color.WHITE);
+        hobby_button_6.setBackgroundColor(Color.WHITE);
+        hobby_button_7.setBackgroundColor(Color.WHITE);
+        
+        color_button_0 = (ImageButton) findViewById(R.id.ImageButton01);
+        color_button_1 = (ImageButton) findViewById(R.id.ImageButton02);
+        color_button_2 = (ImageButton) findViewById(R.id.ImageButton03);
+        color_button_3 = (ImageButton) findViewById(R.id.ImageButton04);
+        color_button_4 = (ImageButton) findViewById(R.id.ImageButton05);
+        color_button_5 = (ImageButton) findViewById(R.id.ImageButton06);
+        color_button_6 = (ImageButton) findViewById(R.id.ImageButton07);
+        color_button_7 = (ImageButton) findViewById(R.id.ImageButton16);
+        color_button_8 = (ImageButton) findViewById(R.id.ImageButton25);
+        color_button_9 = (ImageButton) findViewById(R.id.ImageButton15);
+        
+        color_button_0.setBackgroundColor(Color.WHITE);
+        color_button_1.setBackgroundColor(Color.WHITE);
+        color_button_2.setBackgroundColor(Color.WHITE);
+        color_button_3.setBackgroundColor(Color.WHITE);
+        color_button_4.setBackgroundColor(Color.WHITE);
+        color_button_5.setBackgroundColor(Color.WHITE);
+        color_button_6.setBackgroundColor(Color.WHITE);
+        color_button_7.setBackgroundColor(Color.WHITE);
+        color_button_8.setBackgroundColor(Color.WHITE);
+        color_button_9.setBackgroundColor(Color.WHITE);
+        
+        shape_button_0 = (ImageButton) findViewById(R.id.ImageButton20);
+        shape_button_1 = (ImageButton) findViewById(R.id.ImageButton23);
+        shape_button_2 = (ImageButton) findViewById(R.id.ImageButton22);
+        shape_button_3 = (ImageButton) findViewById(R.id.ImageButton21);
+        
+        shape_button_0.setBackgroundColor(Color.WHITE);
+        shape_button_1.setBackgroundColor(Color.WHITE);
+        shape_button_2.setBackgroundColor(Color.WHITE);
+        shape_button_3.setBackgroundColor(Color.WHITE);
     }
     
 //    private
 //}
 
     public void hobby0(View v){
-    	//this is where the play button comes into play.
-        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
-                //playButton.setText("Pause Playback");
-                hobby_button_0.setBackgroundColor(Color.GREEN);
-                //hobby_choice = 0;
-        }
-        else {
-            //playButton.setText("Play Statistics"); 
-            hobby_button_0.setBackgroundColor(Color.RED);
-            hobby_choice = 0;
-        }*/
+    	hobby_choice = 0;
     	hobby_button_0.setBackgroundColor(Color.GREEN);
         hobby_button_1.setBackgroundColor(Color.WHITE);
         hobby_button_2.setBackgroundColor(Color.WHITE);
@@ -87,17 +140,7 @@ public class ActivityPokemonMatcher extends Activity {
     }
     
     public void hobby1(View v){
-    	//this is where the play button comes into play.
-        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
-                //playButton.setText("Pause Playback");
-                hobby_button_0.setBackgroundColor(Color.GREEN);
-                //hobby_choice = 0;
-        }
-        else {
-            //playButton.setText("Play Statistics"); 
-            hobby_button_0.setBackgroundColor(Color.RED);
-            hobby_choice = 0;
-        }*/
+    	hobby_choice = 1;
     	hobby_button_1.setBackgroundColor(Color.GREEN);
         hobby_button_0.setBackgroundColor(Color.WHITE);
         hobby_button_2.setBackgroundColor(Color.WHITE);
@@ -109,17 +152,7 @@ public class ActivityPokemonMatcher extends Activity {
     }
     
     public void hobby2(View v){
-    	//this is where the play button comes into play.
-        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
-                //playButton.setText("Pause Playback");
-                hobby_button_0.setBackgroundColor(Color.GREEN);
-                //hobby_choice = 0;
-        }
-        else {
-            //playButton.setText("Play Statistics"); 
-            hobby_button_0.setBackgroundColor(Color.RED);
-            hobby_choice = 0;
-        }*/
+    	hobby_choice = 2;
     	hobby_button_2.setBackgroundColor(Color.GREEN);
         hobby_button_1.setBackgroundColor(Color.WHITE);
         hobby_button_0.setBackgroundColor(Color.WHITE);
@@ -131,17 +164,7 @@ public class ActivityPokemonMatcher extends Activity {
     }
     
     public void hobby3(View v){
-    	//this is where the play button comes into play.
-        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
-                //playButton.setText("Pause Playback");
-                hobby_button_0.setBackgroundColor(Color.GREEN);
-                //hobby_choice = 0;
-        }
-        else {
-            //playButton.setText("Play Statistics"); 
-            hobby_button_0.setBackgroundColor(Color.RED);
-            hobby_choice = 0;
-        }*/
+    	hobby_choice = 3;
     	hobby_button_3.setBackgroundColor(Color.GREEN);
         hobby_button_1.setBackgroundColor(Color.WHITE);
         hobby_button_2.setBackgroundColor(Color.WHITE);
@@ -153,17 +176,7 @@ public class ActivityPokemonMatcher extends Activity {
     }
     
     public void hobby4(View v){
-    	//this is where the play button comes into play.
-        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
-                //playButton.setText("Pause Playback");
-                hobby_button_0.setBackgroundColor(Color.GREEN);
-                //hobby_choice = 0;
-        }
-        else {
-            //playButton.setText("Play Statistics"); 
-            hobby_button_0.setBackgroundColor(Color.RED);
-            hobby_choice = 0;
-        }*/
+    	hobby_choice = 4;
     	hobby_button_4.setBackgroundColor(Color.GREEN);
         hobby_button_1.setBackgroundColor(Color.WHITE);
         hobby_button_2.setBackgroundColor(Color.WHITE);
@@ -175,17 +188,7 @@ public class ActivityPokemonMatcher extends Activity {
     }
     
     public void hobby5(View v){
-    	//this is where the play button comes into play.
-        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
-                //playButton.setText("Pause Playback");
-                hobby_button_0.setBackgroundColor(Color.GREEN);
-                //hobby_choice = 0;
-        }
-        else {
-            //playButton.setText("Play Statistics"); 
-            hobby_button_0.setBackgroundColor(Color.RED);
-            hobby_choice = 0;
-        }*/
+    	hobby_choice = 5;
     	hobby_button_5.setBackgroundColor(Color.GREEN);
         hobby_button_1.setBackgroundColor(Color.WHITE);
         hobby_button_2.setBackgroundColor(Color.WHITE);
@@ -197,18 +200,8 @@ public class ActivityPokemonMatcher extends Activity {
     }
     
     public void hobby6(View v){
-    	//this is where the play button comes into play.
-        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
-                //playButton.setText("Pause Playback");
-                hobby_button_0.setBackgroundColor(Color.GREEN);
-                //hobby_choice = 0;
-        }
-        else {
-            //playButton.setText("Play Statistics"); 
-            hobby_button_0.setBackgroundColor(Color.RED);
-            hobby_choice = 0;
-        }*/
-    	hobby_button_7.setBackgroundColor(Color.GREEN);
+    	hobby_choice = 6;
+    	hobby_button_6.setBackgroundColor(Color.GREEN);
         hobby_button_1.setBackgroundColor(Color.WHITE);
         hobby_button_2.setBackgroundColor(Color.WHITE);
         hobby_button_3.setBackgroundColor(Color.WHITE);
@@ -219,17 +212,7 @@ public class ActivityPokemonMatcher extends Activity {
     }
     
     public void hobby7(View v){
-    	//this is where the play button comes into play.
-        /*if ( hobby_choice != 0 ){        //if the text to speech is not playing then play and update button.
-                //playButton.setText("Pause Playback");
-                hobby_button_0.setBackgroundColor(Color.GREEN);
-                //hobby_choice = 0;
-        }
-        else {
-            //playButton.setText("Play Statistics"); 
-            hobby_button_0.setBackgroundColor(Color.RED);
-            hobby_choice = 0;
-        }*/
+    	hobby_choice = 7;
     	hobby_button_7.setBackgroundColor(Color.GREEN);
         hobby_button_1.setBackgroundColor(Color.WHITE);
         hobby_button_2.setBackgroundColor(Color.WHITE);
@@ -239,6 +222,192 @@ public class ActivityPokemonMatcher extends Activity {
         hobby_button_6.setBackgroundColor(Color.WHITE);
         hobby_button_0.setBackgroundColor(Color.WHITE);
     }
+    
+    public void color0(View v){
+    	color_choice = 0;
+    	color_button_0.setBackgroundColor(Color.GREEN);
+        color_button_1.setBackgroundColor(Color.WHITE);
+        color_button_2.setBackgroundColor(Color.WHITE);
+        color_button_3.setBackgroundColor(Color.WHITE);
+        color_button_4.setBackgroundColor(Color.WHITE);
+        color_button_5.setBackgroundColor(Color.WHITE);
+        color_button_6.setBackgroundColor(Color.WHITE);
+        color_button_7.setBackgroundColor(Color.WHITE);
+        color_button_8.setBackgroundColor(Color.WHITE);
+        color_button_9.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void color1(View v){
+    	color_choice = 1;
+    	color_button_1.setBackgroundColor(Color.GREEN);
+        color_button_0.setBackgroundColor(Color.WHITE);
+        color_button_2.setBackgroundColor(Color.WHITE);
+        color_button_3.setBackgroundColor(Color.WHITE);
+        color_button_4.setBackgroundColor(Color.WHITE);
+        color_button_5.setBackgroundColor(Color.WHITE);
+        color_button_6.setBackgroundColor(Color.WHITE);
+        color_button_7.setBackgroundColor(Color.WHITE);
+        color_button_8.setBackgroundColor(Color.WHITE);
+        color_button_9.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void color2(View v){
+    	color_choice = 2;
+    	color_button_2.setBackgroundColor(Color.GREEN);
+        color_button_0.setBackgroundColor(Color.WHITE);
+        color_button_1.setBackgroundColor(Color.WHITE);
+        color_button_3.setBackgroundColor(Color.WHITE);
+        color_button_4.setBackgroundColor(Color.WHITE);
+        color_button_5.setBackgroundColor(Color.WHITE);
+        color_button_6.setBackgroundColor(Color.WHITE);
+        color_button_7.setBackgroundColor(Color.WHITE);
+        color_button_8.setBackgroundColor(Color.WHITE);
+        color_button_9.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void color3(View v){
+    	color_choice = 3;
+    	color_button_3.setBackgroundColor(Color.GREEN);
+        color_button_1.setBackgroundColor(Color.WHITE);
+        color_button_2.setBackgroundColor(Color.WHITE);
+        color_button_0.setBackgroundColor(Color.WHITE);
+        color_button_4.setBackgroundColor(Color.WHITE);
+        color_button_5.setBackgroundColor(Color.WHITE);
+        color_button_6.setBackgroundColor(Color.WHITE);
+        color_button_7.setBackgroundColor(Color.WHITE);
+        color_button_8.setBackgroundColor(Color.WHITE);
+        color_button_9.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void color4(View v){
+    	color_choice = 4;
+    	color_button_4.setBackgroundColor(Color.GREEN);
+        color_button_1.setBackgroundColor(Color.WHITE);
+        color_button_2.setBackgroundColor(Color.WHITE);
+        color_button_3.setBackgroundColor(Color.WHITE);
+        color_button_0.setBackgroundColor(Color.WHITE);
+        color_button_5.setBackgroundColor(Color.WHITE);
+        color_button_6.setBackgroundColor(Color.WHITE);
+        color_button_7.setBackgroundColor(Color.WHITE);
+        color_button_8.setBackgroundColor(Color.WHITE);
+        color_button_9.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void color5(View v){
+    	color_choice = 5;
+    	color_button_5.setBackgroundColor(Color.GREEN);
+        color_button_1.setBackgroundColor(Color.WHITE);
+        color_button_2.setBackgroundColor(Color.WHITE);
+        color_button_3.setBackgroundColor(Color.WHITE);
+        color_button_4.setBackgroundColor(Color.WHITE);
+        color_button_0.setBackgroundColor(Color.WHITE);
+        color_button_6.setBackgroundColor(Color.WHITE);
+        color_button_7.setBackgroundColor(Color.WHITE);
+        color_button_8.setBackgroundColor(Color.WHITE);
+        color_button_9.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void color6(View v){
+    	color_choice = 6;
+    	color_button_6.setBackgroundColor(Color.GREEN);
+        color_button_1.setBackgroundColor(Color.WHITE);
+        color_button_2.setBackgroundColor(Color.WHITE);
+        color_button_3.setBackgroundColor(Color.WHITE);
+        color_button_4.setBackgroundColor(Color.WHITE);
+        color_button_5.setBackgroundColor(Color.WHITE);
+        color_button_0.setBackgroundColor(Color.WHITE);
+        color_button_7.setBackgroundColor(Color.WHITE);
+        color_button_8.setBackgroundColor(Color.WHITE);
+        color_button_9.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void color7(View v){
+    	color_choice = 7;
+    	color_button_7.setBackgroundColor(Color.GREEN);
+        color_button_1.setBackgroundColor(Color.WHITE);
+        color_button_2.setBackgroundColor(Color.WHITE);
+        color_button_3.setBackgroundColor(Color.WHITE);
+        color_button_4.setBackgroundColor(Color.WHITE);
+        color_button_5.setBackgroundColor(Color.WHITE);
+        color_button_6.setBackgroundColor(Color.WHITE);
+        color_button_0.setBackgroundColor(Color.WHITE);
+        color_button_8.setBackgroundColor(Color.WHITE);
+        color_button_9.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void color8(View v){
+    	color_choice = 8;
+    	color_button_8.setBackgroundColor(Color.GREEN);
+        color_button_1.setBackgroundColor(Color.WHITE);
+        color_button_2.setBackgroundColor(Color.WHITE);
+        color_button_3.setBackgroundColor(Color.WHITE);
+        color_button_4.setBackgroundColor(Color.WHITE);
+        color_button_5.setBackgroundColor(Color.WHITE);
+        color_button_6.setBackgroundColor(Color.WHITE);
+        color_button_7.setBackgroundColor(Color.WHITE);
+        color_button_0.setBackgroundColor(Color.WHITE);
+        color_button_9.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void color9(View v){
+    	color_choice = 9;
+    	color_button_9.setBackgroundColor(Color.GREEN);
+        color_button_1.setBackgroundColor(Color.WHITE);
+        color_button_2.setBackgroundColor(Color.WHITE);
+        color_button_3.setBackgroundColor(Color.WHITE);
+        color_button_4.setBackgroundColor(Color.WHITE);
+        color_button_5.setBackgroundColor(Color.WHITE);
+        color_button_6.setBackgroundColor(Color.WHITE);
+        color_button_7.setBackgroundColor(Color.WHITE);
+        color_button_8.setBackgroundColor(Color.WHITE);
+        color_button_0.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void shape0(View v){
+    	shape_choice = 0;
+    	shape_button_0.setBackgroundColor(Color.GREEN);
+        shape_button_1.setBackgroundColor(Color.WHITE);
+        shape_button_2.setBackgroundColor(Color.WHITE);
+        shape_button_3.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void shape1(View v){
+    	shape_choice = 3;
+    	shape_button_3.setBackgroundColor(Color.GREEN);
+        shape_button_0.setBackgroundColor(Color.WHITE);
+        shape_button_2.setBackgroundColor(Color.WHITE);
+        shape_button_1.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void shape2(View v){
+    	shape_choice = 2;
+    	shape_button_2.setBackgroundColor(Color.GREEN);
+        shape_button_0.setBackgroundColor(Color.WHITE);
+        shape_button_1.setBackgroundColor(Color.WHITE);
+        shape_button_3.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void shape3(View v){
+    	shape_choice = 1;
+    	shape_button_1.setBackgroundColor(Color.GREEN);
+        shape_button_3.setBackgroundColor(Color.WHITE);
+        shape_button_2.setBackgroundColor(Color.WHITE);
+        shape_button_0.setBackgroundColor(Color.WHITE);
+    }
+    
+    public void submit(View v){
+    	PokemonMapping pokemap = new PokemonMapping();
+    	int type = pokemap.getType(10*hobby_choice + color_choice);
+    	int pokedex_number = pokemap.getPokedexNumber(100*shape_choice + 10*hobby_choice + color_choice, type);
+    	
+    	TextView tv = (TextView) findViewById(R.id.tvPokenumber);
+    	tv.setText(String.valueOf(pokedex_number));
+    	
+    	Intent intent = new Intent(this, DialogPokemonInfo.class);
+    	startActivity(intent);
+    	//finish();
+    }
+    
 
 /**
  * @title: ActivityPokemonMatcher.java

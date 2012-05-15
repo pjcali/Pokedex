@@ -17,7 +17,7 @@
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="139dp" >
-
+
         <ImageButton
             android:id="@+id/ImageButton08"
             android:layout_width="wrap_content"
@@ -26,8 +26,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="14dp"
             android:onClick="hobby0"
-            android:src="@drawable/icon_art" />
-
+            android:src="@drawable/icon_esp" />
+
         <ImageButton
             android:id="@+id/ImageButton09"
             android:layout_width="wrap_content"
@@ -35,8 +35,8 @@
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/ImageButton08"
             android:onClick="hobby1"
-            android:src="@drawable/icon_comedy" />
-
+            android:src="@drawable/icon_art" />
+
         <ImageButton
             android:id="@+id/ImageButton10"
             android:layout_width="wrap_content"
@@ -44,8 +44,8 @@
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/ImageButton09"
             android:onClick="hobby2"
-            android:src="@drawable/icon_esp" />
-
+            android:src="@drawable/icon_videogame" />
+
         <ImageButton
             android:id="@+id/ImageButton11"
             android:layout_width="wrap_content"
@@ -53,8 +53,8 @@
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/ImageButton10"
             android:onClick="hobby3"
-            android:src="@drawable/icon_heart" />
-
+            android:src="@drawable/icon_sports" />
+
         <ImageButton
             android:id="@+id/ImageButton12"
             android:layout_width="wrap_content"
@@ -62,8 +62,8 @@
             android:layout_alignLeft="@+id/ImageButton11"
             android:layout_below="@+id/ImageButton11"
             android:onClick="hobby4"
-            android:src="@drawable/icon_videogame" />
-
+            android:src="@drawable/icon_heart" />
+
         <ImageButton
             android:id="@+id/ImageButton13"
             android:layout_width="wrap_content"
@@ -71,8 +71,8 @@
             android:layout_alignLeft="@+id/ImageButton10"
             android:layout_below="@+id/ImageButton10"
             android:onClick="hobby5"
-            android:src="@drawable/icon_swimming" />
-
+            android:src="@drawable/icon_comedy" />
+
         <ImageButton
             android:id="@+id/ImageButton14"
             android:layout_width="wrap_content"
@@ -80,8 +80,8 @@
             android:layout_alignLeft="@+id/ImageButton09"
             android:layout_below="@+id/ImageButton09"
             android:onClick="hobby6"
-            android:src="@drawable/icon_sports" />
-
+            android:src="@drawable/icon_swimming" />
+
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="wrap_content"
@@ -105,7 +105,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_weight="9.53" >
-
+
         <ImageButton
             android:id="@+id/ImageButton01"
             android:layout_width="wrap_content"
@@ -113,55 +113,62 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="18dp"
-            android:src="@drawable/icon_red" />
-
+            android:onClick="color0"
+            android:src="@drawable/icon_silver" />
+
         <ImageButton
             android:id="@+id/ImageButton02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/ImageButton01"
-            android:src="@drawable/icon_purple" />
-
+            android:onClick="color1"
+            android:src="@drawable/icon_white" />
+
         <ImageButton
             android:id="@+id/ImageButton03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/ImageButton02"
-            android:src="@drawable/icon_pink" />
-
+            android:onClick="color2"
+            android:src="@drawable/icon_red" />
+
         <ImageButton
             android:id="@+id/ImageButton04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/ImageButton03"
-            android:src="@drawable/icon_yellow" />
-
+            android:onClick="color3"
+            android:src="@drawable/icon_orange" />
+
         <ImageButton
             android:id="@+id/ImageButton05"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/ImageButton04"
-            android:src="@drawable/icon_orange" />
-
+            android:onClick="color4"
+            android:src="@drawable/icon_pink" />
+
         <ImageButton
             android:id="@+id/ImageButton06"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/ImageButton05"
             android:layout_alignParentBottom="true"
-            android:src="@drawable/icon_white" />
-
+            android:onClick="color5"
+            android:src="@drawable/icon_purple" />
+
         <ImageButton
             android:id="@+id/ImageButton07"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/ImageButton04"
             android:layout_alignParentBottom="true"
-            android:src="@drawable/icon_silver" />
+            android:onClick="color6"
+            android:src="@drawable/icon_blue" />
 
         <ImageButton
             android:id="@+id/ImageButton16"
@@ -169,15 +176,17 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/ImageButton02"
             android:layout_alignParentBottom="true"
+             android:onClick="color7"
             android:src="@drawable/icon_green" />
-
+
         <ImageButton
-            android:id="@+id/imageButton1"
+            android:id="@+id/ImageButton25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_toLeftOf="@+id/ImageButton02"
-            android:src="@drawable/icon_blue" />
+            android:onClick="color8"
+            android:src="@drawable/icon_yellow" />
 
         <ImageButton
             android:id="@+id/ImageButton15"
@@ -185,6 +194,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_toRightOf="@+id/ImageButton02"
+             android:onClick="color9"
             android:src="@drawable/icon_brown" />
 
     </RelativeLayout>
@@ -202,39 +212,56 @@
         android:layout_height="139dp" >
 
         <ImageButton
-            android:id="@+id/ImageButton08"
+            android:id="@+id/ImageButton20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="14dp"
+            android:onClick="shape0"
             android:src="@drawable/icon_shape_0" />
-
+
         <ImageButton
-            android:id="@+id/ImageButton09"
+            android:id="@+id/ImageButton23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/ImageButton08"
-            android:src="@drawable/icon_shape_1" />
-
-        <ImageButton
-            android:id="@+id/ImageButton10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/ImageButton09"
-            android:src="@drawable/icon_shape_2" />
-
-        <ImageButton
-            android:id="@+id/ImageButton11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/ImageButton10"
+            android:layout_toRightOf="@+id/ImageButton20"
+            android:onClick="shape3"
             android:src="@drawable/icon_shape_3" />
 
+        <ImageButton
+            android:id="@+id/ImageButton22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton23"
+            android:onClick="shape2"
+            android:src="@drawable/icon_shape_2" />
+
+        <ImageButton
+            android:id="@+id/ImageButton21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton22"
+            android:onClick="shape1"
+            android:src="@drawable/icon_shape_1" />
+
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="submit"
+        android:text="Submit" />
     
+    <TextView
+        android:id="@+id/tvPokenumber"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Pokedex Number Here" />
 
 </LinearLayout>

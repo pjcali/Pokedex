@@ -15,7 +15,7 @@ public class StatisticsTTS implements TextToSpeech.OnInitListener {
 	    checkIntent.setAction(TextToSpeech.Engine.ACTION_CHECK_TTS_DATA); 
 	}//constructor
 	
-	@Override
+	//@Override
 	public void onInit(int status) {
 		if (status == TextToSpeech.Engine.CHECK_VOICE_DATA_PASS) {
 		// success, create the TTS instance
