@@ -11,11 +11,11 @@
         android:layout_weight="0.29" >
 
         <EditText
+            android:hint="Enter a Pokemon name or Pokdex Number"
             android:id="@+id/editText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:text="Enter Pokedex # or name..."
             android:layout_toLeftOf="@+id/button1" />
 
         <Button
@@ -25,6 +25,7 @@
             android:layout_alignBaseline="@+id/editText1"
             android:layout_alignBottom="@+id/editText1"
             android:layout_alignParentRight="true"
+            android:onClick="onSearch"
             android:text="@string/search" />
 
         <FrameLayout
@@ -34,12 +35,6 @@
             android:layout_below="@+id/button1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="66dp" >
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher" />
         </FrameLayout>
 
         <Button
@@ -60,15 +55,14 @@
             android:layout_alignParentLeft="true"
             android:onClick="onClose"
             android:text="@string/back"/>
-
-        <ListView
-            android:id="@+id/listView1"
-            android:layout_width="fill_parent"
-            android:layout_height="200dp"
-            android:layout_above="@+id/button2"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="20dp" >
-        </ListView>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pokeball" />
         
     </RelativeLayout>
 

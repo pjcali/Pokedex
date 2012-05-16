@@ -3,58 +3,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+
+     <RelativeLayout
+         android:id="@+id/relativeLayout2"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" >
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </RelativeLayout>
+         <Button
+             android:id="@+id/button4"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:text="OPTIONS" />
 
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="31dp"
-            android:text="OPTIONS" />
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:src="@drawable/pokeball" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/button4"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="26dp"
-            android:onClick="startPokemonRandom"
-            android:text="Choose a RANDOM POKEMON" />
+         <Button
+             android:id="@+id/button1"
+             android:layout_width="250dp"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/button4"
+             android:layout_centerHorizontal="true"
+             android:layout_marginBottom="141dp"
+             android:onClick="startPokemonMatcher"
+             android:text="What kind of Pokemon are YOU?" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/button3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="23dp"
-            android:onClick="startPokemonSearch"
-            android:text="SEARCH for POKEMON" />
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/button2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp"
-            android:onClick="startPokemonMatcher"
-            android:text="What kind of Pokemon are YOU?" />
+         <Button
+             android:id="@+id/button2"
+             android:layout_width="250dp"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/button1"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="50dp"
+             android:onClick="startPokemonSearch"
+             android:text="SEARCH for POKEMON" />
 
-    </RelativeLayout>
+         <Button
+             android:id="@+id/button3"
+             android:layout_width="250dp"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/button2"
+             android:layout_centerHorizontal="true"
+             android:onClick="startPokemonRandom"
+             android:text="VIEW a RANDOM POKEMON" />
+     </RelativeLayout>
 
 </LinearLayout>
