@@ -65,12 +65,27 @@ public final class R {
         public static final int imageButton2=0x7f05000d;
         public static final int imageView1=0x7f05001f;
         public static final int imgFrame=0x7f05001e;
-        public static final int linearLayout1=0x7f050021;
+        public static final int linearLayout1=0x7f050030;
         public static final int listView1=0x7f050020;
         public static final int relativeLayout1=0x7f050000;
         public static final int relativeLayout2=0x7f050001;
-        public static final int tvPokemonNumber=0x7f050022;
+        public static final int resultPokemon=0x7f050021;
+        public static final int tvAbility=0x7f050026;
+        public static final int tvAttack=0x7f05002a;
+        public static final int tvDefense=0x7f05002b;
+        public static final int tvDescription=0x7f05002f;
+        public static final int tvHeight=0x7f050027;
+        public static final int tvHp=0x7f050029;
+        public static final int tvName=0x7f050023;
+        public static final int tvPokedexNumber=0x7f050022;
+        public static final int tvPokemonNumber=0x7f050031;
         public static final int tvPokenumber=0x7f05001c;
+        public static final int tvSpeed=0x7f05002e;
+        public static final int tvType1=0x7f050024;
+        public static final int tvType2=0x7f050025;
+        public static final int tvWeight=0x7f050028;
+        public static final int tvspAttack=0x7f05002c;
+        public static final int tvspDefense=0x7f05002d;
     }
     public static final class layout {
         public static final int activity_pokedex_main_menu=0x7f030000;

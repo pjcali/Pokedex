@@ -114,6 +114,7 @@ public class PokemonMapping {
 	public int getPokedexNumber( int att, int type ){
 		
 		switch (type){
+			default: return 132;
 			//Filters DRAGON type pokemon
 			case 0:	if( att < 100 )
 						return 147;
@@ -281,7 +282,6 @@ public class PokemonMapping {
 			}
 			
 		}
-		return 0;
 	}
 	
 }
