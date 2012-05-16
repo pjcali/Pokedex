@@ -14,7 +14,7 @@ import android.content.Intent;
 import java.util.Locale;
 
 public class ActivitySearchPokemon extends Activity implements OnInitListener {
-    /** Called when the activity is first created. */
+
 	Button playButton;
 	boolean playStatus = false;	//false means not playing, true means playing
 	String pkmnSearchString = "the search string didn't get reset.";
@@ -36,31 +36,28 @@ public class ActivitySearchPokemon extends Activity implements OnInitListener {
         
     
     public void onClose(View v) {
+    	myTTS.shutdown();
 		finish();
 	}
     
     public void onSearch(View v){
     	enteredText = (EditText)findViewById(R.id.editText1);
     	pkmnSearchString = enteredText.getText().toString();
-    	enteredText.setTextColor(Color.GREEN);
-    	enteredText.setText(pkmnSearchString.toUpperCase());
-    	Log.i("PIA DEBUG", pkmnSearchString);
+    	//input query for db here
     }
  
     public void onPlay(View v){
     	if ( playStatus ){	//if the text to speech is not playing then play and update button.
-            //myTTS.speak(pkmnSearchString, TextToSpeech.QUEUE_FLUSH, null);
     		playButton.setText("STOP Playback");
     		playButton.setBackgroundColor(Color.RED);
     		playStatus=false;
-    		myTTS.speak("inside on play function", TextToSpeech.QUEUE_FLUSH, null);
+    		myTTS.speak("pkmnSearchString", TextToSpeech.QUEUE_FLUSH, null);
     	}
     	else {
     		playButton.setText("PLAY Statistics"); 
     		playButton.setBackgroundColor(Color.GREEN);
     		playStatus=true;
     		myTTS.stop();
-    		myTTS.shutdown();
     	}
     }
 
@@ -91,7 +88,5 @@ public class ActivitySearchPokemon extends Activity implements OnInitListener {
             }
         }
     }
-	
-	
-}
+} //end class
 

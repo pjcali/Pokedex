@@ -9,22 +9,7 @@
         android:layout_height="0dp"
         android:layout_weight="0.29" >
 
-        <FrameLayout
-            android:id="@+id/imgFrame"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_vertical"
-            android:layout_margin="55dp"
-            android:layout_marginTop="66dp" >
-        </FrameLayout>
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_launcher" />
+      
 		<ImageView
 		    android:id="@+id/resultPokemon"
 		    android:layout_width = "wrap_content"
@@ -153,9 +138,9 @@
 		
 		<TextView 
 		    android:id="@+id/tvDescription"
-		    android:layout_width="wrap_content"
+		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
-		    android:layout_marginTop="500dp"
+		    android:layout_marginTop="300dp"
 		    android:text="Pokemon Description" />
         
 		
