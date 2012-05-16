@@ -28,12 +28,35 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
+import java.net.URL;
 import java.sql.*;
+import java.util.ArrayList;
+
+import org.apache.http.HttpConnection;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
 //package us.pokedex;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 
@@ -395,168 +418,20 @@ public class ActivityPokemonMatcher extends Activity {
         shape_button_0.setBackgroundColor(Color.WHITE);
     }
     
-    public void submit(View v){
+    public void submit(View v) throws InstantiationException, IllegalAccessException,IOException{
     	PokemonMapping pokemap = new PokemonMapping();
     	int type = pokemap.getType(10*hobby_choice + color_choice);
     	int pokedex_number = pokemap.getPokedexNumber(100*shape_choice + 10*hobby_choice + color_choice, type);
     	
-    	TextView tv = (TextView) findViewById(R.id.tvPokenumber);
-    	tv.setText(String.valueOf(pokedex_number));
+    	/*Database2 db = new Database2();
     	
-    	Intent intent = new Intent(this, DialogPokemonInfo.class);
+    	TextView tv = (TextView) findViewById(R.id.tvPokenumber);
+    	tv.setText(db.GetPokemonByID(pokedex_number));*/
+    	
+    	Intent intent = new Intent(this, ActivityShowResults.class);
+    	intent.putExtra("POKEDEX", pokedex_number);
     	startActivity(intent);
     	//finish();
     }
     
-
-/**
- * @title: ActivityPokemonMatcher.java
- * @description: Pokemon Database Query Strings and testing.
- * @author Tyler Wood
- * @date April 26, 9:02pm PDT
- */
-
-//1. Get a Pokemon by its ID number. Eg. 001 -> Bulbasaur.
-//Prototype: Using the primary key of the database, the Pokedex_ID, this statement returns a Bulbasaur entry:
-//SELECT * FROM Pokedex12.Pokedex WHERE Pokedex_ID = 1;
-
-//Class for retrieving a pokemon by it's ID number from the database.
-private class GetPokemonByID {
-    
-    //Instance of this class being used.
-    private GetPokemonByID instance = null;
-    
-    public GetPokemonByID()
-    {
-        Connection con = null;
-        Statement st = null;
-        ResultSet rs = null;
-
-        //Hardcoded database location.
-        String url = "thecity.sfsu.edu:3306";
-        String user = "Pokemon12";
-        String password = "pokemon";
-        
-        //Hardcoded prototype pokemon ID.
-        int pokemon_id = 1;    //For a pokemon, BULBASAUR.
-		//int pokemon_id = 25;    //For a pokemon, PIKACHU.
-
-        try {
-            //Connect to the databse.
-            con = DriverManager.getConnection(url, user, password);
-            st = con.createStatement();
-
-			//Try the connection.
-            if((rs == (st.executeQuery("SELECT * FROM Pokedex12.Pokedex WHERE Pokedex_ID = " + pokemon_id))))
-            { /* Success. */}
-			
-			else
-			{/* Not success; do something else. */}
-            
-			//Print out results seen.
-            if (rs.next()) {
-                System.out.println(rs.getString(1));
-            }
-
-        } catch (SQLException ex) {
-                //Some kind of Exception handling here.
-        } finally {
-            //Close connections safely.
-            try {
-                if (rs != null) {
-                    rs.close();
-                }
-                if (st != null) {
-                    st.close();
-                }
-                if (con != null) {
-                    con.close();
-                }
-
-            } catch (SQLException ex) {
-                    //Some kind of Exception handling here.
-            }
-        }
-    }
-    
-    //Class testing; use to instantiate a new instance of the class, which will run.
-    public GetPokemonByID user_GetPokemonByID()
-    {
-        if(instance == null)
-            instance = new GetPokemonByID();
-        return instance;
-    }  
 }
-
-//2. Get a Pokemon by its name. Eg. Pikachu -> Get Pokemon 025.
-//Prototype: Using the name column of the database, this statement returns a Pikachu entry:
-//SELECT * FROM Pokedex12.Pokedex WHERE name = 'PIKACHU';
-
-//Class for retrieving a pokemon by it's name from the database.
-private class GetPokemonByName {
-    
-    //Instance of this class being used.
-    private GetPokemonByName instance = null;
-    
-    public GetPokemonByName()
-    {
-        Connection con = null;
-        Statement st = null;
-        ResultSet rs = null;
-
-        //Hardcoded database location.
-        String url = "thecity.sfsu.edu:3306";
-        String user = "Pokemon12";
-        String password = "pokemon";
-        
-        //Hardcoded prototype pokemon name.
-		String pokemon_name = "PIKACHU";
-		
-        try {
-            //Connect to the databse.
-            con = DriverManager.getConnection(url, user, password);
-            st = con.createStatement();
-
-			//Try the connection.
-            if((rs == (st.executeQuery("SELECT * FROM Pokedex12.Pokedex WHERE name = " + pokemon_name))))
-            { /* Success. */}
-			
-			else
-			{/* Not success; do something else. */}
-            
-			//Print out results seen.
-            if (rs.next()) {
-                System.out.println(rs.getString(1));
-            }
-
-        } catch (SQLException ex) {
-                //Some kind of Exception handling here.
-        } finally {
-            //Close connections safely.
-            try {
-                if (rs != null) {
-                    rs.close();
-                }
-                if (st != null) {
-                    st.close();
-                }
-                if (con != null) {
-                    con.close();
-                }
-
-            } catch (SQLException ex) {
-                    //Some kind of Exception handling here.
-            }
-        }
-    }
-    
-    //Class testing; use to instantiate a new instance of the class, which will run.
-    public GetPokemonByName user_GetPokemonByName()
-    {
-        if(instance == null)
-            instance = new GetPokemonByName();
-        return instance;
-    }  
-}
-}
-

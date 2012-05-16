@@ -25,7 +25,13 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:src="@drawable/ic_launcher" />
-
+		<ImageView
+		    android:id="@+id/resultPokemon"
+		    android:layout_width = "wrap_content"
+		    android:layout_height = "wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop = "40dp" />
+		
         <Button
             android:id="@+id/button1"
             android:layout_width="100dp"
@@ -44,16 +50,115 @@
             android:layout_alignParentLeft="true"
             android:onClick="onClose"
             android:text="@string/back" />
-
-        <ListView
-            android:id="@+id/listView1"
-            android:layout_width="fill_parent"
-            android:layout_height="178dp"
-            android:layout_above="@+id/button1"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="40dp" >
 
-        </ListView>
+        <TextView 
+		    android:id="@+id/tvPokedexNumber"
+		    android:layout_width="20dp"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="170dp"
+		    android:text="Number" />
+        		<TextView 
+		    android:id="@+id/tvName"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="170dp"
+		    android:layout_marginLeft="20dp"
+		    android:text="Pokemon Name Here" />
+		
+		<TextView 
+		    android:id="@+id/tvType1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="190dp"
+		    android:text="Type1" />
+		
+		<TextView 
+		    android:id="@+id/tvType2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="190dp"
+		    android:layout_marginLeft="60dp"
+		    android:text="Type2" />
+		<TextView 
+		    android:id="@+id/tvAbility"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="210dp"
+		    android:layout_marginLeft="0dp"
+		    android:text="Ability" />
+		
+		<TextView 
+		    android:id="@+id/tvHeight"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="230dp"
+		    android:layout_marginLeft="0dp"
+		    android:text="Height" />
+		
+		<TextView 
+		    android:id="@+id/tvWeight"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="230dp"
+		    android:layout_marginLeft="40dp"
+		    android:text="Weight" />
+		
+		<TextView 
+		    android:id="@+id/tvHp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="250dp"
+		    android:layout_marginLeft="0dp"
+		    android:text="Hp" />
+		
+		<TextView 
+		    android:id="@+id/tvAttack"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="250dp"
+		    android:layout_marginLeft="40dp"
+		    android:text="Attack" />
+		
+		<TextView 
+		    android:id="@+id/tvDefense"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="250dp"
+		    android:layout_marginLeft="80dp"
+		    android:text="Defense" />
+		
+		<TextView 
+		    android:id="@+id/tvspAttack"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="250dp"
+		    android:layout_marginLeft="1200dp"
+		    android:text="SpAttack" />
+		
+		<TextView 
+		    android:id="@+id/tvspDefense"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="250dp"
+		    android:layout_marginLeft="160dp"
+		    android:text="SpDefense" />
+		
+		<TextView 
+		    android:id="@+id/tvSpeed"
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:layout_marginTop="250dp"
+		    android:layout_marginLeft="200dp"
+		    android:text="Speed" />
+		
+		<TextView 
+		    android:id="@+id/tvDescription"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="500dp"
+		    android:text="Pokemon Description" />
+        
+		
 
     </RelativeLayout>
 
