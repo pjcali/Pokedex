@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        
+         <TextView
+        android:id="@+id/tvPokemonNumber"
+        android:background="#000000"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Pokedex Number Here" />
+         
+         <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button_ok"
+            android:text="Button" />
+         
+    </LinearLayout>

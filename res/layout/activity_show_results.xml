@@ -2,31 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-
+    android:orientation="vertical" >
+
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.29" >
 
-        <FrameLayout
-            android:id="@+id/imgFrame"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_vertical"
-            android:layout_margin="55dp"
-            android:layout_marginTop="66dp" >
-        </FrameLayout>
-
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/resultPokemon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_launcher" />
-
+            android:layout_marginTop="40dp" />
+
         <Button
             android:id="@+id/button1"
             android:layout_width="100dp"
@@ -34,6 +24,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginRight="18dp"
+            android:onClick="onPlay"
             android:text="@string/play" />
 
         <Button
@@ -44,16 +35,125 @@
             android:layout_alignParentLeft="true"
             android:onClick="onClose"
             android:text="@string/back" />
-
-        <ListView
-            android:id="@+id/listView1"
-            android:layout_width="fill_parent"
-            android:layout_height="178dp"
-            android:layout_above="@+id/button1"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="40dp" >
 
-        </ListView>
+        <TextView
+            android:id="@+id/tvPokedexNumber"
+            android:layout_width="65dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="170dp"
+            android:text="Number" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="170dp"
+            android:text="Pokemon Name Here" />
+
+        <TextView
+            android:id="@+id/tvType1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="190dp"
+            android:text="Type1" />
+
+        <TextView
+            android:id="@+id/tvAbility"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="210dp"
+            android:text="Ability" />
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="230dp"
+            android:text="Height" />
+
+        <TextView
+            android:id="@+id/tvHp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="250dp"
+            android:text="Hp" />
+
+        <TextView
+            android:id="@+id/tvspAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="1200dp"
+            android:layout_marginTop="250dp"
+            android:text="SpAttack" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:text="Pokemon Description" />
+
+        <TextView
+            android:id="@+id/tvAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvHp"
+            android:text="Attack" />
+
+        <TextView
+            android:id="@+id/tvspDefense"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tvAttack"
+            android:text="SpDefense" />
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/tvHeight"
+            android:layout_alignBottom="@+id/tvHeight"
+            android:layout_alignRight="@+id/tvName"
+            android:text="Weight" />
+
+        <TextView
+            android:id="@+id/tvDefense"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/tvWeight"
+            android:layout_below="@+id/tvHp"
+            android:text="Defense" />
+
+        <TextView
+            android:id="@+id/tvSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_above="@+id/tvDefense"
+            android:layout_alignLeft="@+id/tvDefense"
+            android:text="Speed" />
+
+        <TextView
+            android:id="@+id/tvspAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/tvspDefense"
+            android:layout_alignBottom="@+id/tvspDefense"
+            android:layout_alignLeft="@+id/tvDefense"
+            android:text="SpAttack" />
+
+        <TextView
+            android:id="@+id/tvType2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/tvType1"
+            android:layout_alignBottom="@+id/tvType1"
+            android:layout_alignLeft="@+id/tvWeight"
+            android:text="Type2" />
 
     </RelativeLayout>
 

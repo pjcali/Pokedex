@@ -4,13 +4,18 @@
     android:layout_height="match_parent"
     android:background="@drawable/pokedex"
     android:orientation="vertical" >
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 7866690c5dec066dea92cf40ea0f11f84b272226
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.29" >
 
+<<<<<<< HEAD
         <FrameLayout
             android:id="@+id/imgFrame"
             android:layout_width="wrap_content"
@@ -18,13 +23,33 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="66dp" >
         </FrameLayout>
+=======
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="75dp"
+            android:hint="Enter a Pokemon name or Pokdex Number" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:onClick="onSearch"
+            android:text="@string/search" />
+>>>>>>> 7866690c5dec066dea92cf40ea0f11f84b272226
+
+        <Button
+            android:id="@+id/button3"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
+<<<<<<< HEAD
             android:layout_marginRight="32dp"
             android:onClick="onPlay"
             android:text="@string/play" />
@@ -68,6 +93,12 @@
             <requestFocus />
         </EditText>
 
+=======
+            android:layout_marginBottom="56dp"
+            android:onClick="onClose"
+            android:text="@string/back" />
+
+>>>>>>> 7866690c5dec066dea92cf40ea0f11f84b272226
     </RelativeLayout>
 
 </LinearLayout>

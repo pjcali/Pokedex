@@ -28,6 +28,7 @@
         		android:textColor="#000000"
         		android:text="Choose your favorite hobby" />
 
+<<<<<<< HEAD
     		<RelativeLayout
         		android:id="@+id/relativeLayout1"
         		android:gravity="center_horizontal"
@@ -106,6 +107,86 @@
             		android:layout_alignTop="@+id/ImageButton13"
             		android:onClick="hobby7"
             		android:src="@drawable/icon_outdoors" />
+=======
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="139dp" >
+
+        <ImageButton
+            android:id="@+id/ImageButton08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:onClick="hobby0"
+            android:src="@drawable/icon_esp" />
+
+        <ImageButton
+            android:id="@+id/ImageButton09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton08"
+            android:onClick="hobby1"
+            android:src="@drawable/icon_art" />
+
+        <ImageButton
+            android:id="@+id/ImageButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton09"
+            android:onClick="hobby2"
+            android:src="@drawable/icon_videogame" />
+
+        <ImageButton
+            android:id="@+id/ImageButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton10"
+            android:onClick="hobby3"
+            android:src="@drawable/icon_sports" />
+
+        <ImageButton
+            android:id="@+id/ImageButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageButton11"
+            android:layout_below="@+id/ImageButton11"
+            android:onClick="hobby4"
+            android:src="@drawable/icon_heart" />
+
+        <ImageButton
+            android:id="@+id/ImageButton13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageButton10"
+            android:layout_below="@+id/ImageButton10"
+            android:onClick="hobby5"
+            android:src="@drawable/icon_comedy" />
+
+        <ImageButton
+            android:id="@+id/ImageButton14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageButton09"
+            android:layout_below="@+id/ImageButton09"
+            android:onClick="hobby6"
+            android:src="@drawable/icon_swimming" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageButton08"
+            android:layout_alignTop="@+id/ImageButton13"
+            android:onClick="hobby7"
+            android:src="@drawable/icon_outdoors" />
+>>>>>>> 7866690c5dec066dea92cf40ea0f11f84b272226
 
     		</RelativeLayout>
 
@@ -117,6 +198,7 @@
         	android:textColor="#000000"
         	android:text="Choose your favorite color" />
     
+<<<<<<< HEAD
     	<RelativeLayout
         	android:gravity="center_horizontal"
         	android:id="@+id/relativeLayout2"
@@ -204,9 +286,109 @@
             	android:layout_alignParentBottom="true"
             	android:layout_toRightOf="@+id/ImageButton02"
             	android:src="@drawable/icon_brown" />
+=======
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="9.53" >
+
+        <ImageButton
+            android:id="@+id/ImageButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:onClick="color0"
+            android:src="@drawable/icon_silver" />
+
+        <ImageButton
+            android:id="@+id/ImageButton02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton01"
+            android:onClick="color1"
+            android:src="@drawable/icon_white" />
+
+        <ImageButton
+            android:id="@+id/ImageButton03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton02"
+            android:onClick="color2"
+            android:src="@drawable/icon_red" />
+
+        <ImageButton
+            android:id="@+id/ImageButton04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton03"
+            android:onClick="color3"
+            android:src="@drawable/icon_orange" />
+
+        <ImageButton
+            android:id="@+id/ImageButton05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton04"
+            android:onClick="color4"
+            android:src="@drawable/icon_pink" />
+
+        <ImageButton
+            android:id="@+id/ImageButton06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageButton05"
+            android:layout_alignParentBottom="true"
+            android:onClick="color5"
+            android:src="@drawable/icon_purple" />
+
+        <ImageButton
+            android:id="@+id/ImageButton07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageButton04"
+            android:layout_alignParentBottom="true"
+            android:onClick="color6"
+            android:src="@drawable/icon_blue" />
+
+        <ImageButton
+            android:id="@+id/ImageButton16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageButton02"
+            android:layout_alignParentBottom="true"
+             android:onClick="color7"
+            android:src="@drawable/icon_green" />
+
+        <ImageButton
+            android:id="@+id/ImageButton25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/ImageButton02"
+            android:onClick="color8"
+            android:src="@drawable/icon_yellow" />
+
+        <ImageButton
+            android:id="@+id/ImageButton15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/ImageButton02"
+             android:onClick="color9"
+            android:src="@drawable/icon_brown" />
+>>>>>>> 7866690c5dec066dea92cf40ea0f11f84b272226
 
     	</RelativeLayout>
     
+<<<<<<< HEAD
     	<TextView
     	    android:id="@+id/shape"
         	android:gravity="center_horizontal"
@@ -253,6 +435,90 @@
             	android:layout_alignParentTop="true"
             	android:layout_toRightOf="@+id/ImageButton10"
             	android:src="@drawable/icon_shape_3" />
+=======
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose your favorite shape" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="139dp" >
+
+        <ImageButton
+            android:id="@+id/ImageButton20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:onClick="shape0"
+            android:src="@drawable/icon_shape_0" />
+
+        <ImageButton
+            android:id="@+id/ImageButton23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton20"
+            android:onClick="shape3"
+            android:src="@drawable/icon_shape_3" />
+
+        <ImageButton
+            android:id="@+id/ImageButton22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton23"
+            android:onClick="shape2"
+            android:src="@drawable/icon_shape_2" />
+
+        <ImageButton
+            android:id="@+id/ImageButton21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ImageButton22"
+            android:onClick="shape1"
+            android:src="@drawable/icon_shape_1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="onClose"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:onClick="submit"
+        android:text="Submit" />
+    
+    </RelativeLayout>
+
+>>>>>>> 7866690c5dec066dea92cf40ea0f11f84b272226
 
     		</RelativeLayout>
     	</LinearLayout>
