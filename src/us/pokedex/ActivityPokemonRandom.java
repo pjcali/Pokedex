@@ -1,6 +1,9 @@
 package us.pokedex;
 
+import java.util.Random;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -12,8 +15,11 @@ public class ActivityPokemonRandom extends Activity{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show_results);
-        playButton = (Button)findViewById(R.id.button1);
+        Random randomGenerator = new Random();
+        int randomNum = randomGenerator.nextInt(151)+1;
+        Intent intent = new Intent(this, ActivityShowResults.class);
+    	intent.putExtra("POKEDEX", randomNum);
+    	startActivity(intent);
     }
     
     public void onClose(View v) {

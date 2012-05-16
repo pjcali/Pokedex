@@ -37,13 +37,14 @@ public class ActivitySearchPokemon extends Activity implements OnInitListener {
     
     public void onClose(View v) {
     	myTTS.shutdown();
-		finish();
+    	startActivity(new Intent(this, ActivityPokedexMainMenu.class));
 	}
     
     public void onSearch(View v){
     	enteredText = (EditText)findViewById(R.id.editText1);
     	pkmnSearchString = enteredText.getText().toString();
     	//input query for db here
+    	startActivity(new Intent(this, ActivityShowResults.class));
     }
  
     public void onPlay(View v){

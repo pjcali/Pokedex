@@ -2,35 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-
+    android:orientation="vertical" >
      <RelativeLayout
          android:id="@+id/relativeLayout2"
          android:layout_width="match_parent"
          android:layout_height="match_parent" >
 
-         <Button
-             android:id="@+id/button4"
-             android:layout_width="150dp"
-             android:layout_height="wrap_content"
-             android:layout_alignParentBottom="true"
-             android:layout_centerHorizontal="true"
-             android:text="OPTIONS" />
-
          <ImageView
              android:id="@+id/imageView1"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
              android:layout_centerHorizontal="true"
+             android:layout_marginTop="23dp"
              android:src="@drawable/pokeball" />
 
          <Button
              android:id="@+id/button1"
              android:layout_width="250dp"
              android:layout_height="wrap_content"
-             android:layout_above="@+id/button4"
+             android:layout_below="@+id/imageView1"
              android:layout_centerHorizontal="true"
-             android:layout_marginBottom="141dp"
+             android:layout_marginTop="48dp"
              android:onClick="startPokemonMatcher"
              android:text="What kind of Pokemon are YOU?" />
 
@@ -38,20 +31,22 @@
              android:id="@+id/button2"
              android:layout_width="250dp"
              android:layout_height="wrap_content"
-             android:layout_alignTop="@+id/button1"
+             android:layout_below="@+id/button1"
              android:layout_centerHorizontal="true"
-             android:layout_marginTop="50dp"
+             android:layout_marginTop="24dp"
              android:onClick="startPokemonSearch"
              android:text="SEARCH for POKEMON" />
-
+
          <Button
              android:id="@+id/button3"
              android:layout_width="250dp"
              android:layout_height="wrap_content"
-             android:layout_below="@+id/button2"
+             android:layout_alignParentBottom="true"
              android:layout_centerHorizontal="true"
+             android:layout_marginBottom="20dp"
              android:onClick="startPokemonRandom"
              android:text="VIEW a RANDOM POKEMON" />
+
      </RelativeLayout>
 
 </LinearLayout>

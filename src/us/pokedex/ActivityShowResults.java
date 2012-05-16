@@ -31,7 +31,7 @@ public class ActivityShowResults extends Activity implements OnInitListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.testlayout);
+        setContentView(R.layout.display_results);
         
         playButton = (Button) findViewById(R.id.button1);
         
@@ -136,7 +136,7 @@ public class ActivityShowResults extends Activity implements OnInitListener {
     
     public void onClose(View v) {
     	myTTS.shutdown();
-		finish();
+    	startActivity(new Intent(this, ActivityPokedexMainMenu.class));
 	}
     public void onPlay(View v){
     	if ( playStatus ){	//if the text to speech is not playing then play and update button.
