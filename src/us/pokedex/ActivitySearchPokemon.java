@@ -43,8 +43,13 @@ public class ActivitySearchPokemon extends Activity implements OnInitListener {
     public void onSearch(View v){
     	enteredText = (EditText)findViewById(R.id.editText1);
     	pkmnSearchString = enteredText.getText().toString();
-    	//input query for db here
-    	startActivity(new Intent(this, ActivityShowResults.class));
+    	Intent intent = new Intent(this, ActivityShowResults.class);
+    	if ( Integer.valueOf(pkmnSearchString) < 152 ||  Integer.valueOf(pkmnSearchString) > 0 )
+    		intent.putExtra("POKEDEX", pkmnSearchString);	//check for number
+    	else if ( !pkmnSearchString.equals(null) )
+    		intent.putExtra("POKEMON", pkmnSearchString);
+    	
+    	startActivity(intent);
     }
  
     public void onPlay(View v){

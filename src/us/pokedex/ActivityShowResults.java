@@ -34,22 +34,37 @@ public class ActivityShowResults extends Activity implements OnInitListener {
         setContentView(R.layout.display_results);
         
         playButton = (Button) findViewById(R.id.button1);
-        
+        String pkmn="";
         int pokedex_number = 0;
         Pokemon pk = new Pokemon();
         
         Bundle extras = getIntent().getExtras();
-        pokedex_number = extras.getInt("POKEDEX");
+        if (extras.containsKey("POKEDEX") && !extras.isEmpty()){
+        	pokedex_number = extras.getInt("POKEDEX");
         
-        try {
-			pk = QueryDB.queryByID(pokedex_number);
-		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+        	try {
+        		pk = QueryDB.queryByID(pokedex_number);
+        	} catch (ClientProtocolException e) {
+        		// TODO Auto-generated catch block
+        		e.printStackTrace();
+        	} catch (IOException e) {
+        		// TODO Auto-generated catch block
+        		e.printStackTrace();
+        	}
+        }//end if
+        else {	//searching by name
+        	pkmn = extras.getString("POKEMON").toUpperCase();
+        	try {
+        		pk = QueryDB.queryByName(pkmn);
+        	} catch (ClientProtocolException e) {
+        		// TODO Auto-generated catch block
+        		e.printStackTrace();
+        	} catch (IOException e) {
+        		// TODO Auto-generated catch block
+        		e.printStackTrace();
+        	}
+        }
+        
         ImageView resultPokemon = (ImageView)findViewById(R.id.resultPokemon);
         try {
             URL url = null;
@@ -65,9 +80,11 @@ public class ActivityShowResults extends Activity implements OnInitListener {
             InputStream input = connection.getInputStream();
             Bitmap myBitmap = BitmapFactory.decodeStream(input);
             resultPokemon.setImageBitmap(myBitmap);
+           
         } catch (IOException e) {
             e.printStackTrace();
         }
+        
         //show data
         TextView tvNumber = (TextView) findViewById(R.id.tvPokedexNumber);
        // tvNumber.setBackgroundColor(Color.WHITE);

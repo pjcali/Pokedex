@@ -29,8 +29,6 @@ public class ActivityPokemonRandom extends Activity{
     public void onPlay(View v){
     	//this is where the play button comes into play.
     	if ( playStatus ){	//if the text to speech is not playing then play and update button.
-    		//StatisticsTTS m = new StatisticsTTS(this);
-    		//m.onInit(1);
     		playButton.setText("PAUSE Playback");
     		playButton.setBackgroundColor(Color.GREEN);
     		playStatus=false;
