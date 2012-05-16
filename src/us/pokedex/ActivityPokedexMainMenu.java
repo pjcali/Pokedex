@@ -21,6 +21,7 @@ public class ActivityPokedexMainMenu extends Activity {
     	Log.i("PIADEBUG", "JUST GOT INSIDE THE START function.");
     	Log.getStackTraceString(tr);
     	startActivity(new Intent(c, ActivityPokemonMatcher.class));
+    	overridePendingTransition(0,0);
     	Log.i("PIADEBUG", "JUST GOT PAST THE CALL.");
     	//finish();
     }
@@ -28,16 +29,19 @@ public class ActivityPokedexMainMenu extends Activity {
 
     public void startPokemonSearch(View v){
     	startActivity(new Intent(this, ActivitySearchPokemon.class));
+    	overridePendingTransition(0,0);
     	finish();
     }
     
     public void startPokemonRandom(View v){
     	startActivity(new Intent(this, ActivityPokemonRandom.class));
+    	overridePendingTransition(0,0);
     	finish();
     }
     
     public void startOptions(View v){
     	startActivity(new Intent(this, ActivityPokemonMatcher.class));
+    	overridePendingTransition(0,0);
     	finish();
 
     }

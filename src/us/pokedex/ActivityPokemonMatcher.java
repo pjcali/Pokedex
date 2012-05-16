@@ -26,9 +26,11 @@ public class ActivityPokemonMatcher extends Activity {
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import java.sql.*;
 //package us.pokedex;
@@ -59,6 +61,14 @@ public class ActivityPokemonMatcher extends Activity {
         hobby_button_5 = (ImageButton) findViewById(R.id.ImageButton13);
         hobby_button_6 = (ImageButton) findViewById(R.id.ImageButton14);
         hobby_button_7 = (ImageButton) findViewById(R.id.imageButton2);
+        
+        TextView tv_hobby = (TextView) findViewById(R.id.hobbie);
+        TextView tv_color = (TextView) findViewById(R.id.color);
+        TextView tv_shape = (TextView) findViewById(R.id.shape);
+        Typeface face = Typeface.createFromAsset(getAssets(),"8bitfont.ttf");
+        tv_hobby.setTypeface(face);
+        tv_color.setTypeface(face);
+        tv_shape.setTypeface(face);
     }
     
 //    private

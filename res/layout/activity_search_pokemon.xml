@@ -2,46 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pokedex"
     android:orientation="vertical" >
-
+
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.29" >
 
-        <EditText
-            android:id="@+id/editText1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:text="Enter Pokedex # or name..."
-            android:layout_toLeftOf="@+id/button1" />
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/editText1"
-            android:layout_alignBottom="@+id/editText1"
-            android:layout_alignParentRight="true"
-            android:text="@string/search" />
-
         <FrameLayout
             android:id="@+id/imgFrame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/button1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="66dp" >
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher" />
         </FrameLayout>
-
+
         <Button
             android:id="@+id/button2"
             android:layout_width="100dp"
@@ -59,17 +36,38 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:onClick="onClose"
-            android:text="@string/back"/>
+            android:text="@string/back" />
 
-        <ListView
-            android:id="@+id/listView1"
-            android:layout_width="fill_parent"
-            android:layout_height="200dp"
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26dp"
+            android:layout_marginLeft="41dp"
+            android:src="@drawable/ic_launcher" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_above="@+id/button2"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="20dp" >
-        </ListView>
-        
+            android:layout_marginBottom="146dp"
+            android:layout_toRightOf="@+id/imgFrame"
+            android:text="@string/search" />
+
+        <EditText
+            android:id="@+id/pokemon_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_marginBottom="50dp"
+            android:layout_toRightOf="@+id/button3"
+            android:ems="10"
+            android:text="Enter Pokedex # or name..." >
+
+            <requestFocus />
+        </EditText>
+
     </RelativeLayout>
 
 </LinearLayout>

@@ -3,10 +3,12 @@ package us.pokedex;
 import android.app.Activity;
 import android.os.Bundle;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class ActivitySearchPokemon extends Activity {
     /** Called when the activity is first created. */
@@ -19,6 +21,10 @@ public class ActivitySearchPokemon extends Activity {
         setContentView(R.layout.activity_search_pokemon);
         playButton = (Button) findViewById(R.id.button2);
         if (playButton == null) Log.i("PIADEBUG","THE BUTTON IS NULL");
+        
+        //TextView tv_search = (TextView) findViewById(R.id.pokemon_search);
+        //Typeface face = Typeface.createFromAsset(getAssets(), "8bitfont.tff");
+        //tv_search.setTypeface(face);
     }
     
     public void onClose(View v) {
