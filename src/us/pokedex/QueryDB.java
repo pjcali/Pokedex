@@ -89,6 +89,7 @@ public class QueryDB {
         pk.setType2(type2);
         pk.setAbility(ability);
         pk.setDescription(description);
+        Log.i("SHOWING DESC STRING...", description);
         pk.setHeight(Float.valueOf(height));
         pk.setWeight(Float.valueOf(weight));
         pk.setHp(Integer.valueOf(hp));
@@ -96,6 +97,7 @@ public class QueryDB {
         pk.setDefense(Integer.valueOf(defense));
         pk.setspAttack(Integer.valueOf(spAttack));
         pk.setspDefense(Integer.valueOf(spDefense));
+        pk.setSpeed(Integer.valueOf(speed));
     	}catch(JSONException e){
             Log.e("log_tag", "Error parsing data "+e.toString());
     	}

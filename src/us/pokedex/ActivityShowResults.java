@@ -31,7 +31,7 @@ public class ActivityShowResults extends Activity implements OnInitListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show_results);
+        setContentView(R.layout.testlayout);
         
         playButton = (Button) findViewById(R.id.button1);
         
@@ -70,55 +70,62 @@ public class ActivityShowResults extends Activity implements OnInitListener {
         }
         //show data
         TextView tvNumber = (TextView) findViewById(R.id.tvPokedexNumber);
-        tvNumber.setBackgroundColor(Color.WHITE);
+       // tvNumber.setBackgroundColor(Color.WHITE);
         tvNumber.setText(String.valueOf(pokedex_number));
-        pkmnAudioString = "Pokdex Number: "+String.valueOf(pokedex_number)+ ", ";
         TextView tvName = (TextView) findViewById(R.id.tvName);
-        tvName.setBackgroundColor(Color.WHITE);
+        //tvName.setBackgroundColor(Color.WHITE);
         tvName.setText(pk.getName());
-        pkmnAudioString += String.valueOf(pk.getName())+ ", ";
+        pkmnAudioString = String.valueOf(pk.getName())+ ", ";
+        pkmnAudioString += "Poke-ay dex Number: "+String.valueOf(pokedex_number)+ ", ";
         TextView tvType1 = (TextView) findViewById(R.id.tvType1);
-        tvType1.setBackgroundColor(Color.WHITE);
-        tvType1.setText("Type: " + pk.getType1());
+       // tvType1.setBackgroundColor(Color.WHITE);
+        tvType1.setText(pk.getType1());
         pkmnAudioString += "Type: "+String.valueOf(pk.getType1())+ ", ";
         TextView tvType2 = (TextView) findViewById(R.id.tvType2);
         if( pk.getType2() != null ){
-        	tvType2.setBackgroundColor(Color.WHITE);
-        	tvType2.setText("/" + pk.getType2());
-        	pkmnAudioString += "Sub-Type: "+String.valueOf(pk.getType2())+ ", ";
+        	//tvType2.setBackgroundColor(Color.WHITE);
+        	tvType2.setText(pk.getType2());
+        	//pkmnAudioString += "Sub-Type: "+String.valueOf(pk.getType2())+ ", ";
         }
         TextView tvHeight = (TextView) findViewById(R.id.tvHeight);
-        tvHeight.setBackgroundColor(Color.WHITE);
-        tvHeight.setText(String.valueOf(pk.getHeight()));
-        pkmnAudioString += "Height: "+String.valueOf(pk.getHeight())+ " meters, ";
+       // tvHeight.setBackgroundColor(Color.WHITE);
+        tvHeight.setText(String.valueOf(pk.getHeight()) + "m");
+        //pkmnAudioString += "Height: "+String.valueOf(pk.getHeight())+ " meters, ";
         TextView tvWeight = (TextView) findViewById(R.id.tvWeight);
-        tvWeight.setBackgroundColor(Color.WHITE);
-        tvWeight.setText(String.valueOf(pk.getWeight()));
-        pkmnAudioString += "Weight: "+String.valueOf(pk.getWeight())+ " kilograms, ";
+        //tvWeight.setBackgroundColor(Color.WHITE);
+        tvWeight.setText(String.valueOf(pk.getWeight())+"kg");
+       // pkmnAudioString += "Weight: "+String.valueOf(pk.getWeight())+ " kilograms, ";
         TextView tvHp = (TextView) findViewById(R.id.tvHp);
-        tvHp.setBackgroundColor(Color.WHITE);
+        //tvHp.setBackgroundColor(Color.WHITE);
         tvHp.setText(String.valueOf(pk.getHp()));
-        pkmnAudioString += "Hit Points: "+String.valueOf(pk.getHp())+ ", ";
+        //pkmnAudioString += "Hit Points: "+String.valueOf(pk.getHp())+ ", ";
+        TextView tvAbility = (TextView) findViewById(R.id.tvAbility);
+        tvAbility.setText(String.valueOf(pk.getAbility()));
+        //tvHp.setBackgroundColor(Color.WHITE);
+        tvHp.setText(String.valueOf(pk.getHp()));
         TextView tvAttack = (TextView) findViewById(R.id.tvAttack);
-        tvAttack.setBackgroundColor(Color.WHITE);
+       // tvAbility.setBackgroundColor(Color.WHITE);
+        //tvAttack.setBackgroundColor(Color.WHITE);
         tvAttack.setText(String.valueOf(pk.getAttack()));
-        pkmnAudioString += "Attack: "+String.valueOf(pk.getAttack())+ ", ";
+        //pkmnAudioString += "Attack: "+String.valueOf(pk.getAttack())+ ", ";
         TextView tvDefense = (TextView) findViewById(R.id.tvDefense);
-        tvDefense.setBackgroundColor(Color.WHITE);
+        //tvDefense.setBackgroundColor(Color.WHITE);
         tvDefense.setText(String.valueOf(pk.getDefense()));
-        pkmnAudioString += "Defense: "+String.valueOf(pk.getDefense())+ ", ";
+        //pkmnAudioString += "Defense: "+String.valueOf(pk.getDefense())+ ", ";
         TextView tvspAttack = (TextView) findViewById(R.id.tvspAttack);
-        tvspAttack.setBackgroundColor(Color.WHITE);
+        //tvspAttack.setBackgroundColor(Color.WHITE);
         tvspAttack.setText(String.valueOf(pk.getspAttack()));
-        pkmnAudioString += "Special Attack: "+String.valueOf(pk.getspAttack())+ ", ";
+        //pkmnAudioString += "Special Attack: "+String.valueOf(pk.getspAttack())+ ", ";
         TextView tvspDefense = (TextView) findViewById(R.id.tvspDefense);
-        tvspDefense.setBackgroundColor(Color.WHITE);
-        tvspDefense.setText(String.valueOf(pk.getspDefense()));
-        pkmnAudioString += "Special Defense: "+String.valueOf(pk.getspDefense())+ ", ";
+        //tvspDefense.setBackgroundColor(Color.WHITE);
+        tvspDefense.setText( String.valueOf(pk.getspDefense()));
+        //pkmnAudioString += "Special Defense: "+String.valueOf(pk.getspDefense())+ ", ";
         TextView tvDes = (TextView) findViewById(R.id.tvDescription);
-        tvDes.setBackgroundColor(Color.WHITE);
+        //tvDes.setBackgroundColor(Color.WHITE);
         tvDes.setText(pk.getDescription());
         pkmnAudioString += ". "+String.valueOf(pk.getDescription())+ ".";
+        TextView tvSpeed = (TextView) findViewById(R.id.tvSpeed);
+        tvSpeed.setText(String.valueOf(pk.getSpeed()));
         
         //check for TTS data
         Intent checkTTSIntent = new Intent();
@@ -136,7 +143,7 @@ public class ActivityShowResults extends Activity implements OnInitListener {
     		playButton.setText("STOP Playback");
     		playButton.setBackgroundColor(Color.RED);
     		playStatus=false;
-    		myTTS.speak("JP is a dirty boy..."+pkmnAudioString, TextToSpeech.QUEUE_FLUSH, null);
+    		myTTS.speak(pkmnAudioString, TextToSpeech.QUEUE_FLUSH, null);
     	}
     	else {
     		playButton.setText("PLAY Statistics"); 

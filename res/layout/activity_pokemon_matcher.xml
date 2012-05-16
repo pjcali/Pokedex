@@ -27,7 +27,7 @@
             android:layout_marginLeft="14dp"
             android:onClick="hobby0"
             android:src="@drawable/icon_esp" />
-
+
         <ImageButton
             android:id="@+id/ImageButton09"
             android:layout_width="wrap_content"
@@ -199,6 +199,18 @@
 
     </RelativeLayout>
     
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
     <TextView
         android:gravity="center_horizontal"
         android:layout_width="fill_parent"
@@ -248,20 +260,26 @@
             android:onClick="shape1"
             android:src="@drawable/icon_shape_1" />
 
-    </RelativeLayout>
-
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="onClose"
+        android:text="Back" />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
         android:onClick="submit"
         android:text="Submit" />
     
-    <TextView
-        android:id="@+id/tvPokenumber"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:text="Pokedex Number Here" />
+    </RelativeLayout>
+
 
 </LinearLayout>

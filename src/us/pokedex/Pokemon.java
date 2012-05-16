@@ -35,6 +35,7 @@ public class Pokemon {
 		height = 0;
 		weight = 0;
 		name = "";
+		speed=0;
 	}
 	
 	/**
@@ -156,6 +157,14 @@ public class Pokemon {
 	
 	public void setspDefense(int d){
 		spDefense = d;
+	}
+	
+	public void setSpeed(int s){
+		speed = s;
+	}
+	
+	public int getSpeed(){
+		return speed;
 	}
 	
 	void addColor( int i ){

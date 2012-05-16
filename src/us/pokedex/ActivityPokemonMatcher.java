@@ -434,4 +434,8 @@ public class ActivityPokemonMatcher extends Activity {
     	//finish();
     }
     
+    public void onClose(View v){
+    	finish();
+    }
+    
 }
