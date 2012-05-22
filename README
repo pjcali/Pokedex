@@ -1,12 +1,76 @@
-This will be the user manual. 
+This is the user manual and maintenance guide for the Android Pokedex. 
 
-Ted Henkels,
-4/24/2012
+The source code is found in the Pokedex/src.
+NOTE: This project uses Android API level 8 (for Android OS 2.2 and up).
+Additionally, this project is written entirely in java. No class files 
+will be found in this project as they will vary based on the build path of each user
+attempting to extend, modify, or examine the code.
 
-Sean Rossi, 
-The current date is: Sun 04/15/2012 
+The layouts of the project for each screen can be found in the pokedex/res/layout
+folder as XML files.
 
-Tyler Wood, 
-Date: 4/21/12
+TODO:
+1. Incorporate Pokemon cries with audio playback
+2. Use a male voice instead of a female voice in TTS
+3. Extend search features to search for Pokemon even if the user doesn't know what the 
+name of the Pokemon is
+4. Incorporate a start-up sound for the application
+5. Test functionality in different language (portability of application is very 
+important to us)
+6. Fix minor bugs that we forgot to document
+7. Have some kind of bug tracking to accompany this project
+8. Add a new column in the MySQL database to use for pronounciation issues
+9. Implement pause functionality
 
-TEST: ON FIRST COMMIT, MAKE SURE YOU EDIT THIS FILE WITH NAME and TIMESTAMP. 
+---------------------------------------------------------------------------------
+TO USE:
+**USER'S NOTE: As there are over 600 Pokemon in existence today, this application only 
+has information on the first 151 (from Bulbasaur to Mew). This may be expanded to 
+include more Pokemon as more time is dedicated to this project.
+
+A. Open the application:
+  Displaying All Applications, choose (touch/select) the Android-Pokedex.
+
+B. Use the Pokemon Matching feature:
+  From the home screen, choose the option "What Kind of POKEMON are you?"
+  The user should be taken to a screen where he/she will be prompted to select
+  an activity/hobby that best describes him/her, then a color he/she likes, and 
+  a shape of a face that most resembles him/her.
+  After the three options have been selected, the user will touch/select "Submit" 
+  and will be taken to a new screen that will show the image and information
+  regarding the Pokemon that most resembles him/her.
+
+C. Use the Pokemon Search feature:
+  From the home screen, choose the option "Search for a Pokemon"
+  The user should be taken to a screen where he/she will be prompted to type in
+  the name of the Pokemon he/she would like to see. 
+  (As of 5/21/2012, the search ability is limited to searching by name OR Pokedex
+  number ONLY, and incomplete or improperly spelled names will not return a Pokemon.
+  This shall be addressed in the next iteration of edits that will be done in the
+  coming months.)
+  After the user types in a Pokemon name, the user will select/touch "Search" and
+  will be taken to a new screen that will show the image and information regarding
+  the Pokemon that the user searched for.
+
+D. Generate a random Pokemon
+  From the home screen, choose the option "Generate a random Pokemon"
+  The user will be taken to a new screen that will display the image and information
+  of a randomly generated Pokemon.
+
+E. Viewing the Results
+  After options A, B, or C are selected, the user will be taken to a new screen that
+  will display an image of the Pokemon, and below it will have text that the user can 
+  scroll through to read statistics.
+
+F. Using the Text to Speech feature to have results read to the user
+  On the results screen, the user can choose to play back the information of the 
+  Pokemon. To do so, the user must touch/select the PLAY statistics button. Upon touch, 
+  the button will become red (the text will also change to STOP playback)
+  so that when the user wants to stop playback, he/she only needs to touch the 
+  same button (upon touch the button will become green and will read "PLAY statistics").
+  When the STOP button is pushed, the audio will stop. When PLAY is selected after a stop
+  the audio will begin reading statistics from the beginning.
+
+G. Using the back button
+  At any point in time during the use of the application, the user can select the "Back"
+  button to return to the home screen.
